@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/bookShelf.jpeg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">THE PLAN</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">RESULTS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CONTACT ME</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px"><br>bookclub</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">THE PLAN</span></h5>
+    <p>The results are in! - Sounds like ya'll losers wanna read.</p>
+    <p>Based on the survey I've decided on a few things!... </p>
+    <p>Initially, I thought we would finish an entire book between meetings, but some people mentioned meeting more regularly. I thought that could be fun to discuss books while we progress, so I liked this idea a lot. I want this to be super casual, so there's never pressure to attend all the meetings. </p>
+    <p>My current idea/plan is to read a book a month and meet every other week for a mid-book update! Finales will be hosted at someones house/apartment, and mid-book meetups will be out on the town. We can discuss more what we want this to look like at our first meeting. I've added a survey to gather times that people are available and figured we could meetup to pick our first book and iron out the details!</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>Vote!</i></p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScpxkvqrFH9e7Yxa1PtXqao9JtDJ5XtinSyYKa44FICT_BzYA/viewform?embedded=true" width="640" height="934" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">RESULTS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Books');" id="myLink">
+        <div class="w3-col s6 tablink">Recommendations</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Members');">
+        <div class="w3-col s6 tablink">Members (tentative)</div>
+      </a>
+    </div>
+
+    <div id="Books" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Vicious - VE Schwab</h5>
+      <p class="w3-text-grey">A masterful tale of ambition, jealousy, desire, and superpowers.</p><br>
+    
+      <h5>Dune - Frank Herbert</h5>
+      <p class="w3-text-grey">He who controls the spice, controls the universe.</p><br>
+    
+      <h5>The Thin Executioner - Darren Shan</h5>
+      <p class="w3-text-grey">To retrieve his honor . . . To wield unimaginable power . . . To become . . . The thin executioner</p><br>
+    
+      <h5>The House in the Cerulean Sea - T.J.Klune</h5>
+      <p class="w3-text-grey">A magical island. A dangerous task. A burning secret.</p><br>
+    
+      <h5>Oryx and Crake - Margaret Atwood</h5>
+      <p class="w3-text-grey">A journey through the lush wilderness that was so recently a great city, until powerful corporations took mankind on an uncontrolled genetic engineering ride.</p><br>
+
+      <h5>Close Your Eyes - Iris Johansen & Roy Johansen</h5>
+      <p class="w3-text-grey">WHAT YOU DON'T SEE CAN KILL YOU.</p><br>
+
+      <h5>A Deadly Education - Naomi Novik</h5>
+      <p class="w3-text-grey">A school for the magically gifted where failure means certain death.</p>
+    </div>
+
+    <div id="Members" class="w3-container menu w3-padding-48 w3-card">
+      <h4><b>Elma</b></h4>
+
+      <h5>Marisa</h5>
+    
+      <h5>Harry Beaver</h5>
+    
+      <h5>Mehgan</h5>
+    
+      <h5>Justin</h5>
+    
+      <h5>Eddy</h5>
+
+      <h5>revw118</h5>
+  
+      <h5>Alicia</h5>
+     
+      <h5>Riss</h5>
+
+      <h5>Elliot</h5>
+
+      <h5>Gabbi</h5>
+    </div>  
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <p>Don't hesitate to text me with any questions or concerns at (303)345-3186</p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
