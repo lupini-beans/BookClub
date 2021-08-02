@@ -22,6 +22,22 @@ body, html {
   display: none;
 }
 
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
 IMG.displayed {
     display: block;
     margin-left: auto;
@@ -39,7 +55,7 @@ IMG.displayed {
       <a href="#about" class="w3-button w3-block w3-black">READING</a>
     </div>
     <div class="w3-col s3">
-      <a href="#menu" class="w3-button w3-block w3-black">VOTE</a>
+      <a href="#menu" class="w3-button w3-block w3-black">MEMBERS</a>
     </div>
     <div class="w3-col s3">
         <a href="#info" class="w3-button w3-block w3-black">INFO</a>
@@ -60,66 +76,61 @@ IMG.displayed {
 <!-- About Container -->
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">UPDATE</span></h5>
+    <p>I will post surveys on Fridays and results on Mondays.</p>
+    <p>Also I made a discord! <a href="https://discord.gg/aPEEdNge">Join here</a> </p>
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">CURRENTLY READING</span></h5>
     <img class="displayed" id="bookshelf" src="images/DarkMatter.jpg" alt="" />
     <div class="w3-panel w3-leftbar w3-light-grey">
       <p><i>I suppose we’re both just trying to come to terms with how horrifying infinity really is.</i></p>
     </div>
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">GOAL</span></h5>
-    <p>Read the first 3 chapters by the next meeting</p>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">NEXT MEETING</span></h5>
+    <p><b>WHERE:</b> Boulder Brew Pub Verona</p>
+    <p><b>WHEN:</b> Thursday, August 5th at 630pm</p>
+    <p><b>THRU:</b> Chapter 3</p>
+    <p class="w3-center"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11675.814238905037!2d-89.516184!3d42.9792519!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4d396ef9aaf177b2!2sBoulder%20Brewpub!5e0!3m2!1sen!2sus!4v1627945712711!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe></p>
+    <p>See you there!</p><br>
   </div>
 </div>
 
 <!-- Menu Container -->
 <div class="w3-container" id="menu">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">VOTE</span></h5>
-  
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Books');" id="myLink">
-        <div class="w3-col s6 tablink">Vote</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'Members');">
-        <div class="w3-col s6 tablink">Members</div>
-      </a>
+    <div class="w3-content" style="max-width:500px">
+        <div class="card">
+            <div class="container">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">MEMBERS</span></h5>
+                <p><i>Elma</i></p>
+
+                <p>Marisa</p>
+
+                <p>Rizzo (not the baseball player)</p>
+
+                <p>Mehgan</p>
+                
+                <p>Juice Man</p>
+
+                <p>Eddy</p>
+
+                <p>Bichael Michael</p>
+
+                <p>Alicia</p>
+
+                <p>Riss</p>
+
+                <p>Elliot</p>
+
+                <p>Gabbi</p>
+
+                <p>Ben (I didn't forget this time!)</p>
+
+                <p>Nate</p>
+
+                <p>Caleb</p>
+            </div>
+        </div>
     </div>
-
-    <div id="Books" class="w3-container menu w3-padding-48 w3-card">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdqRZiqEKO1l9nPznXEo939eV6h5rtXYwaQCl_CewGqeCJb0g/viewform?embedded=true" width="330" height="2200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
-
-    <div id="Members" class="w3-container menu w3-padding-48 w3-card">
-      <p><b>Elma</b></p>
-
-      <p>Marisa</p>
-
-      <p>Rizzo (not the baseball player)</p>
-
-      <p>Mehgan</p>
-    
-      <p>Juice Man</p>
-
-      <p>Eddy</p>
-
-      <p>Bichael Michael</p>
-
-      <p>Alicia</p>
-
-      <p>Riss</p>
-
-      <p>Elliot</p>
-
-      <p>Gabbi</p>
-
-      <p>Ben (I didn't forget this time!)</p>
-
-      <p>Nate</p>
-
-      <p>Caleb</p>
-    </div>  
-  </div>
 </div>
+
 
 <div class="w3-container" id="info">
     <div class="w3-content" style="max-width:700px">
